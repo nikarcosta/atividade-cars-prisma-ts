@@ -6,7 +6,7 @@ async function getCars() {
   const cars = await carRepository.getCars();
   return cars;
 }
-
+/*
 async function getCar(id: number) {
   const car = await carRepository.getCar(id);
   if (!car) {
@@ -29,12 +29,12 @@ async function deleteCar(id: number) {
   await getCar(id);
   await carRepository.deleteCar(id);
 }
-
+*/
 const carService = {
   getCars,
-  getCar,
-  createCar,
-  deleteCar
+  //getCar,
+  //createCar,
+  //deleteCar
 }
 
 export default carService;
