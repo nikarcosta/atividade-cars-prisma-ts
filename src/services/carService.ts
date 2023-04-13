@@ -6,7 +6,7 @@ async function getCars() {
   const cars = await carRepository.getCars();
   return cars;
 }
-/*
+
 async function getCar(id: number) {
   const car = await carRepository.getCar(id);
   if (!car) {
@@ -15,7 +15,7 @@ async function getCar(id: number) {
 
   return car;
 }
-
+/*
 async function createCar(model: string, licensePlate: string, year: number, color: string) {
   const car = await carRepository.getCarWithLicensePlate(licensePlate);
   if (car) {
@@ -32,7 +32,7 @@ async function deleteCar(id: number) {
 */
 const carService = {
   getCars,
-  //getCar,
+  getCar,
   //createCar,
   //deleteCar
 }

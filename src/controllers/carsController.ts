@@ -12,7 +12,7 @@ async function getAllCars(req: Request, res: Response) {
     return res.sendStatus(httpStatus.INTERNAL_SERVER_ERROR);
   }
 }
-/*
+
 async function getSpecificCar(req: Request, res: Response) {
   const carId = parseInt(req.params.carId);
   try {
@@ -24,7 +24,7 @@ async function getSpecificCar(req: Request, res: Response) {
     }
   }
 }
-
+/*
 async function createCar(req: Request, res: Response) {
   const { model, licensePlate, year, color } = req.body;
 
@@ -59,7 +59,7 @@ async function deleteCar(req: Request, res: Response) {
 */
 const carController = {
   getAllCars,
-  //getSpecificCar,
+  getSpecificCar,
   //createCar,
   //deleteCar
 }
