@@ -24,17 +24,17 @@ async function createCar(model: string, licensePlate: string, year: number, colo
 
   await carRepository.createCar(model, licensePlate, year, color);
 }
-/*
+
 async function deleteCar(id: number) {
   await getCar(id);
   await carRepository.deleteCar(id);
 }
-*/
+
 const carService = {
   getCars,
   getCar,
   createCar,
-  //deleteCar
+  deleteCar
 }
 
 export default carService;
